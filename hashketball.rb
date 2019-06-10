@@ -249,6 +249,6 @@ def winning_team
   winner = ""
   
     game_hash[:home][:players].ea h do |name, value|
-      home_points += value 
+      home_points += value[:points]
   end
 end
