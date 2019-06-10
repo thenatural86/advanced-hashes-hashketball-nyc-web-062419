@@ -251,5 +251,6 @@ def winning_team
     game_hash[:home][:players].ea h do |name, value|
       home_points += value[:points]
   end
-  
+    game_hash[:away][:players].ea h do |name, value|
+      away_points += value[:points]
 end
