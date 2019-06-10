@@ -248,6 +248,6 @@ def winning_team
   away_points = 0 
   winner = ""
   
-    game_hash[:home][:players]
+    game_hash[:home][:players].ea h do ||
   end
 end
