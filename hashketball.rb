@@ -248,14 +248,6 @@ def winning_team
   away_points = 0 
   winner = ""
   
-    game_hash.each do |place, team|
-      team.each do |attribute, data|
-        if attribute == :player
-          data.each do |player|
-            home_points += player[:points]
-            
-        end
-      end
-    end
+    game_hash[]
   end
 end
