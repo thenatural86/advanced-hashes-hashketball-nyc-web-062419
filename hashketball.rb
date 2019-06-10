@@ -253,5 +253,6 @@ def winning_team
   end
     game_hash[:away][:players].ea h do |name, value|
       away_points += value[:points]
-    end
+    end 
+    if home_points > away_points
 end
