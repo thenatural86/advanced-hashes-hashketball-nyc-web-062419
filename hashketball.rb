@@ -246,17 +246,5 @@ end
 def winning_team
   home_team = 0
   away_team = 0
-  game_hash[:home][:players].each do |name, value|
-    home_team += value[:points]
-  end
-  game_hash[:away][:players].each do |name, value|
-    away_team += value[:points]
-  end
-  if home_team > away_team
-      game_hash[:home][:team_name]
-  elsif home_team < away_team
-      game_hash[:away][:team_name]
-  else
-      "It's a tie!"
-  end
+  
 end
